@@ -28,7 +28,7 @@ module.exports = class MailSender {
             const mailOptions = {
                 from: email,
                 to: toEmail,
-                subject: name + ' Discord Email Verification',
+                subject: '[' + name + '] 가입 인증 메일입니다.',
                 text: getLocale(serverSettings.language, "emailText", name, code)
             };
 
