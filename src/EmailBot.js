@@ -71,14 +71,14 @@ bot.once('ready', async () => {
 
         })
     })
-    bot.user.setActivity("/verify | Website", {
-        type: "PLAYING", url: "https://emailbot.larskaesberg.de"
+    bot.user.setActivity("/verify", {
+        type: "PLAYING", url: "https://sketch.town"
     })
 });
 
 setInterval(function () {
-    bot.user.setActivity("/verify | Website", {
-        type: "PLAYING", url: "https://emailbot.larskaesberg.de"
+    bot.user.setActivity("/verify", {
+        type: "PLAYING", url: "https://sketch.town"
     })
 }, 3600000);
 
