@@ -31,7 +31,7 @@ module.exports = class MailSender {
     async sendEmail(toEmail, code, name, message, emailNotify, callback) {
         await database.getServerSettings(this.userGuilds.get(message.author.id).id, serverSettings => {
             const mailOptions = {
-                from: '"Email Verification Bot ✉️" <'+ email +'>',
+                from: '"SketchTown 인증 ✉️" <'+ email +'>',
                 to: toEmail,
                 subject: '[' + name + '] 가입 인증 메일입니다.',
                 text: getLocale(serverSettings.language, "emailText", name, code)
